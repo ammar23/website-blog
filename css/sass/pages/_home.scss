@@ -1,0 +1,142 @@
+@-webkit-keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(20px);
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(20px);
+    -ms-transform: translateY(20px);
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+    -ms-transform: translateY(0);
+    transform: translateY(0);
+  }
+}
+
+.fadeInUp {
+  -webkit-animation: fadeInUp 2s;
+  animation: fadeInUp 2s;
+}
+
+// reset ul ,ol
+
+.overlay {
+  background-color: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  z-index: 2;
+  display: none;
+}
+
+aside {
+  background: $whiteColor;
+  margin-top: 3rem;
+  box-shadow: 0 0px 10px #d0d0d0;
+
+  ul {
+    padding: 15px;
+    li:last-child {
+      border: none;
+      padding-bottom: 0;
+      margin-bottom: 0;
+    }
+    li {
+      margin-bottom: 10px;
+      border-bottom: 1px solid #efefef;
+      padding-bottom: 10px;
+    }
+    a {
+      color: $BlueColor;
+      &:hover {
+        color: $mainColor;
+        text-decoration: none;
+      }
+    }
+    .badge {
+      float: $float-right;
+      background: $mainColor;
+      border-radius: 50px;
+      width: 25px;
+      height: 25px;
+      text-align: center;
+      line-height: 20px;
+      font-size: 12px;
+    }
+    i {
+      margin-right: 5px;
+    }
+  }
+}
+/*********************/
+.wrapperNewPost {
+  margin-top: 3rem;
+  margin-bottom: 30px;
+  .NewPost {
+    z-index: 3;
+    position: relative;
+  }
+  .headerPost {
+    background: $greenColor;
+    color: $whiteColor;
+    padding: 10px;
+    text-align: center;
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+  }
+  #add_message {
+    border: none;
+    padding: 10px;
+    width: 100%;
+    height: 90px !important;
+    resize: none;
+    overflow-y: hidden;
+  }
+  .FootertPost {
+    padding: 10px;
+    width: 100%;
+    background: $whiteColor;
+    height: 85px;
+    margin-top: -10px;
+    .Attached {
+      float: $float-left;
+      hr {
+        width: 95%;
+        margin-left: 0;
+      }
+      i {
+        font-size: 30px;
+        color: $grayColorBold;
+        margin-right: 10px;
+      }
+      span {
+        border: 1px solid $grayColorBold;
+        margin-right: 10px;
+        display: inline-block;
+        height: 23px;
+      }
+    }
+
+    #btn1 {
+      background: $mainColor;
+      float: $float-right;
+      color: $whiteColor;
+      margin: -5px 10px 10px;
+    }
+  }
+}

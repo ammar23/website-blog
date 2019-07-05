@@ -1,0 +1,92 @@
+.TopNavBar {
+  background: $BackgroundBlack;
+  padding: 10px;
+}
+.ulTopNavbarLeft {
+  li {
+    display: inline-block;
+    a {
+      color: $whiteColor;
+      span {
+        margin: 0 2px;
+      }
+    }
+  }
+}
+.ulTopNavbarRight {
+  li {
+    float: $float-right;
+    a {
+      color: $whiteColor;
+      margin-left: 25px;
+      font-size: 14px;
+    }
+  }
+}
+.TopDropdown {
+  float: $float-right;
+  font-size: 14px;
+  padding-top: 5px;
+  .resetButtomDropDown {
+        color: #fff;
+  }
+}
+
+/**********start *navbar**********************************/
+
+// .toogleNavbar {
+//   position:relative;
+// }
+// .toogleNavbar {
+//   font-family: "Font Awesome 5 Free";
+//         font-weight: 400;
+//         content: "\f1de";
+//         position: absolute;
+//         left: 0;
+// }
+
+.navbar {
+  padding: 0;
+}
+.NaveBarLinks {
+  background: $whiteColor;
+  padding: 15px 0 0;
+}
+.navbar-nav {
+  .active{
+    a,i{
+      color: $mainColor;
+    }
+
+  }
+  li {
+    text-align: center;
+    margin-right: 20px;
+
+    a {
+      color: $BlueColor;
+      text-transform: uppercase;
+    }
+    i {
+      color: $BlueColor;
+    }
+  }
+}
+.userInfo{
+  li{
+    display: inline-block;
+  }
+  .searchBox{
+    float: $float-right;
+    background: $BlueColorLight;
+    height: 100px;
+    margin-top: -15px;
+    width: 50px;
+    text-align: center;
+    line-height: 100px;
+    i{
+      color: black;
+    }
+  }
+
+}

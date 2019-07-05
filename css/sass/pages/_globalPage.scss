@@ -1,0 +1,31 @@
+* {
+  box-sizing: border-box;
+  outline: 0px;
+}
+
+ul,
+ol {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+body {
+  position: relative;
+  background: $BackgroundBody;
+  font-family: $fontFaimlyEn;
+}
+textarea:hover,
+input:hover,
+textarea:active,
+input:active,
+textarea:focus,
+input:focus,
+button:focus,
+button:active,
+button:hover,
+label:focus,
+.btn:active,
+.btn.active {
+  outline: 0px !important;
+  -webkit-appearance: none;
+}
